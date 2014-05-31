@@ -1,0 +1,25 @@
+﻿/*---------------------------------------------------------------------------------------------
+
+				Informações do código
+	
+							
+    - Trabalho desenvolvido no projeto de ensino: "Desenvolver matérias didático que 
+	  
+      estabelecem pontes conceituais entre as disciplinas de "Lógica para computação",
+	  
+      "Teoria da Computação" e "Compiladores".
+	
+    - Orientador: César Alberto Bravo Pariente
+	
+    - Autor: Ícaro Andrade Souza
+	
+    - Data: 20/05/2014
+	
+    - Email: ICARO-ANDRADE1@HOTMAIL.COM
+
+    - Objetivo: Juntando os códigos disponibilizados no final de cada capítulo do livro 
+		"Linguagens Formais", do autor Ramos. Foi montado a plataforma com todos
+		os reconhecedores da hierarquia de Chomsky, que estão em Linguagem Ruby.
+		Junto com esta plataforma está o slide explicando como funciona e como
+		utilizar.
+---------------------------------------------------------------------------------------------*/

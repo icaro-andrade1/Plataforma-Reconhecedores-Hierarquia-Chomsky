@@ -1,0 +1,32 @@
+--- &id001 !ruby/object:AutomatoNaoDeterministico 
+consulta: !ruby/object:Consulta 
+  automato: *id001
+entrada: !ruby/object:FitaLimitada 
+  celulas: <abbccc>
+  cursor: 6
+estadoCorrente: q2
+estadosFinais: 
+- q2
+movimentacao: !ruby/object:MovimentacaoNaoDeterministica 
+  automato: *id001
+transicoes: 
+  ? 
+    - q2
+    - c
+  : 
+    - q2
+
+  ? 
+    - q1
+    - b
+  : 
+    - q1
+    - q2
+
+  ? 
+    - q0
+    - a
+  : 
+    - q1
+    - q2
+

@@ -1,0 +1,78 @@
+--- &id001 !ruby/object:AutomatoPilhaDeterministico 
+consulta: !ruby/object:ConsultaAPD 
+  automato: *id001
+entrada: !ruby/object:FitaLimitada 
+  celulas: <aaaaaaaaaabbbbbbbbbb>
+  cursor: 21
+estadoCorrente: q1
+estadosFinais: 
+- qf
+movimentacao: !ruby/object:MovimentacaoAPD 
+  automato: *id001
+pilha: !ruby/object:Pilha 
+  conteudo: 
+  - Z0
+transicoes: 
+  ? 
+    - q1
+    - ""
+    - Z0
+  : 
+    - qf
+    - []
+
+
+  ? 
+    - q0
+    - b
+    - A
+  : 
+    - q1
+    - []
+
+
+  ? 
+    - q0
+    - ""
+    - Z0
+  : 
+    - qf
+    - []
+
+
+  ? 
+    - q0
+    - a
+    - A
+  : 
+    - q0
+    - - A
+      - A
+
+  ? 
+    - q0
+    - a
+    - Z0
+  : 
+    - q0
+    - - Z0
+      - A
+    - A
+    - A
+    - A
+    - A
+    - A
+    - A
+    - A
+    - A
+    - A
+
+  ? 
+    - q1
+    - b
+    - A
+  : 
+    - q1
+    - []
+
+

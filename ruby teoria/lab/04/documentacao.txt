@@ -1,0 +1,4 @@
+apd = automato de pilha deterministica
+ape = automato de pilha estruturado
+apnd = automato de pilha nao deterministico
+glc = gramatica livre de contexto

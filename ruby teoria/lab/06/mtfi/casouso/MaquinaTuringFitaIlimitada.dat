@@ -1,0 +1,110 @@
+--- &id001 !ruby/object:MaquinaTuringFitaIlimitada 
+consulta: !ruby/object:Consulta 
+  automato: *id001
+entrada: !ruby/object:FitaIlimitada 
+  celulas: 
+  - <
+  - X
+  - Y
+  - Z
+  - x
+  - B
+  - y
+  - B
+  - z
+  - B
+  cursor: 9
+  limiteQtdeB: 5
+estadoCorrente: q10
+estadosFinais: 
+- q10
+movimentacao: !ruby/object:MovimentacaoMTFI 
+  automato: *id001
+transicoes: 
+  ? 
+    - q10
+    - B
+  : 
+    - []
+
+
+  ? 
+    - q4
+    - B
+  : 
+    - - q5
+      - B
+      - D
+
+  ? 
+    - q7
+    - B
+  : 
+    - - q8
+      - z
+      - D
+
+  ? 
+    - q2
+    - z
+  : 
+    - - q3
+      - Z
+      - D
+
+  ? 
+    - q8
+    - B
+  : 
+    - - q9
+      - B
+      - E
+
+  ? 
+    - q0
+    - x
+  : 
+    - - q1
+      - X
+      - D
+
+  ? 
+    - q9
+    - z
+  : 
+    - - q10
+      - z
+      - D
+
+  ? 
+    - q5
+    - B
+  : 
+    - - q6
+      - y
+      - D
+
+  ? 
+    - q6
+    - B
+  : 
+    - - q7
+      - B
+      - D
+
+  ? 
+    - q3
+    - B
+  : 
+    - - q4
+      - x
+      - D
+
+  ? 
+    - q1
+    - y
+  : 
+    - - q2
+      - Y
+      - D
+
